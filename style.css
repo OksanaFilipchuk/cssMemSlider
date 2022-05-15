@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+input{
+    visibility: hidden;
+}
+body{
+    background-color: black;
+}
+
+.container{
+    width: 60%;    
+    margin: 0 auto;
+    overflow-x: hidden;
+
+}
+.slider{
+    width: 500%;   
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    grid-template-rows: repeat(3, auto);
+    /* grid-auto-flow: row; */
+    
+
+}
+.bar{
+    width: 1%;
+    display: block;
+}
+.slide {
+    width: 100%;
+    border-radius: 5%;
+    
+
+}
+img{
+    width: 100%;
+}
+.slide1{
+    margin-left: -5%;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.discriptions {
+    display: flex;
+    overflow-x: hidden;
+    width: 50%;
+    align-items: center;
+}
+.discription {
+    color:white;
+    min-width: 100%;
+    font-size: 1.3em;
+}
+
+.buttons{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    gap: 0.5em;
+
+}
+.button {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    background: radial-gradient(circle, #eee 50%, black 10%);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+.button:hover{
+    background: radial-gradient(circle, rgb(104, 217, 245) 50%, black 10%);
+
+}
+#pic2:checked ~ .slide2{
+        margin-left: -100%;
+}
+#pic2:checked ~ .discription2 {
+    margin-left: -100%;
+}
+#pic3:checked ~ .slide3{
+    margin-left: -200%;
+}
+#pic3:checked ~ .discription3 {
+    margin-left: -200%;
+}
+#pic4:checked ~ .slide4{
+    margin-left: -300%;
+}
+#pic4:checked ~ .discription4 {
+    margin-left: -300%;
+}
+#pic5:checked ~ .slide5{
+    margin-left: -400%;
+}
+#pic5:checked ~ .discription5 {
+    margin-left: -400%;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 70%;
+    }
+}
