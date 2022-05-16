@@ -14,6 +14,7 @@ body{
     width: 60%;    
     margin: 0 auto;
     overflow-x: hidden;
+    min-height: 100vh;
 
 }
 .slider{
@@ -22,6 +23,7 @@ body{
     grid-template-columns: repeat(5, 1fr);
     gap: 0;
     grid-template-rows: repeat(3, auto);
+    
     /* grid-auto-flow: row; */
     
 
@@ -33,80 +35,314 @@ body{
 .slide {
     width: 100%;
     border-radius: 5%;
+    margin-bottom: 20px;
     
 
 }
 img{
     width: 100%;
 }
-.slide1{
-    margin-left: -5%;
-}
-.navigation{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-.discriptions {
-    display: flex;
-    overflow-x: hidden;
-    width: 50%;
-    align-items: center;
-}
+
+
 .discription {
     color:white;
     min-width: 100%;
     font-size: 1.3em;
+    background-color: black;
+    line-height: 1.6em;
+
 }
 
 .buttons{
-    width: 50%;
+    /* width: 50%; */
     text-align: center;
     display: flex;
     justify-content: end;
     gap: 0.5em;
+    margin-top: -3.5%;
 
 }
 .button {
     display: inline-block;
-    width: 1.3em;
-    height: 1.3em;
-    background: radial-gradient(circle, #eee 50%, black 10%);
-    transition: all 1s ease-in-out;
+    width: 1.8em;
+    height: 1.8em;
+    background: radial-gradient(circle, #eee 30%, black 10%);
+    transition: all 5s ease-in-out;
     cursor: pointer;
-}
-.button:hover{
-    background: radial-gradient(circle, rgb(104, 217, 245) 50%, black 10%);
 
 }
+.button:hover{
+    background: radial-gradient(circle, rgb(104, 217, 245) 10%,rgb(218, 70, 33) 30%, black 10%);
+
+}
+/* pic1 */
+
+#pic1:checked ~ .slide5{
+    margin-left: 0;
+    transition: all 1s;
+}
+#pic1:checked ~ .discription5 {
+    margin-left: 0;
+    transition: all 1s;
+}
+#pic1:checked ~ .slide4{
+    margin-left: 0;
+    transition: all 1s;
+}
+#pic1:checked ~ .discription4 {
+    margin-left: 0;
+    transition: all 1s;
+    
+}
+#pic1:checked ~ .slide3{
+    margin-left: 0;
+    transition: all 1s;
+}
+#pic1:checked ~ .discription3 {
+    margin-left: 0;
+    transition: all 1s;
+}
+#pic1:checked ~ .slide2{
+    margin-left: 0;
+    transition: all 1s;
+}
+#pic1:checked ~ .discription2 {
+    margin-left: 0;
+    transition: all 1s;
+}
+#pic1:checked ~ .slide1{
+    margin-left: 0;
+    transition: all 1s;
+}
+#pic1:checked ~ .discription1 {
+    margin-left: 0;
+    transition: all 1s;
+}
+
+/* pic2 */
+
+#pic2:checked ~ .slide5{
+    margin-left: -100%;
+    transition: all 1s;
+}
+#pic2:checked ~ .discription5 {
+    margin-left: -100%;
+    transition: all 1s;
+}
+#pic2:checked ~ .slide4{
+    margin-left: -100%;
+    transition: all 1s;
+}
+#pic2:checked ~ .discription4 {
+    margin-left: -100%;
+    transition: all 1s;
+    
+}
+#pic2:checked ~ .slide3{
+    margin-left: -100%;
+    transition: all 1s;
+}
+#pic2:checked ~ .discription3 {
+    margin-left: -100%;
+    transition: all 1s;
+}
 #pic2:checked ~ .slide2{
-        margin-left: -100%;
+    margin-left: -100%;
+    transition: all 1s;
 }
 #pic2:checked ~ .discription2 {
     margin-left: -100%;
+    transition: all 1s;
+}
+#pic2:checked ~ .slide1{
+    margin-left: -100%;
+    transition: all 1s;
+}
+#pic2:checked ~ .discription1 {
+    margin-left: -100%;
+    transition: all 1s;
+}
+
+/* pic3 */
+
+#pic3:checked ~ .slide5{
+    margin-left: -200%;
+    transition: all 1s;
+}
+#pic3:checked ~ .discription5 {
+    margin-left: -200%;
+    transition: all 1s;
+}
+#pic3:checked ~ .slide4{
+    margin-left: -200%;
+    transition: all 1s;
+}
+#pic3:checked ~ .discription4 {
+    margin-left: -200%;
+    transition: all 1s;
+    
 }
 #pic3:checked ~ .slide3{
     margin-left: -200%;
+    transition: all 1s;
 }
 #pic3:checked ~ .discription3 {
     margin-left: -200%;
+    transition: all 1s;
+}
+#pic3:checked ~ .slide2{
+    margin-left: -200%;
+    transition: all 1s;
+}
+#pic3:checked ~ .discription2 {
+    margin-left: -200%;
+    transition: all 1s;
+}
+#pic3:checked ~ .slide1{
+    margin-left: -200%;
+    transition: all 1s;
+}
+#pic3:checked ~ .discription1 {
+    margin-left: -200%;
+    transition: all 1s;
+}
+
+/* pic4 */
+
+#pic4:checked ~ .slide5{
+    margin-left: -300%;
+    transition: all 1s;
+}
+#pic4:checked ~ .discription5 {
+    margin-left: -300%;
+    transition: all 1s;
 }
 #pic4:checked ~ .slide4{
     margin-left: -300%;
+    transition: all 1s;
 }
 #pic4:checked ~ .discription4 {
     margin-left: -300%;
+    transition: all 1s;
+    
 }
+#pic4:checked ~ .slide3{
+    margin-left: -300%;
+    transition: all 1s;
+}
+#pic4:checked ~ .discription3 {
+    margin-left: -300%;
+    transition: all 1s;
+}
+#pic4:checked ~ .slide2{
+    margin-left: -300%;
+    transition: all 1s;
+}
+#pic4:checked ~ .discription2 {
+    margin-left: -300%;
+    transition: all 1s;
+}
+#pic4:checked ~ .slide1{
+    margin-left: -300%;
+    transition: all 1s;
+}
+#pic4:checked ~ .discription1 {
+    margin-left: -300%;
+    transition: all 1s;
+}
+
+/* pic5 */
+
 #pic5:checked ~ .slide5{
     margin-left: -400%;
+    transition: all 1s;
 }
 #pic5:checked ~ .discription5 {
     margin-left: -400%;
+    transition: all 1s;
 }
+#pic5:checked ~ .slide4{
+    margin-left: -400%;
+    transition: all 1s;
+}
+#pic5:checked ~ .discription4 {
+    margin-left: -400%;
+    transition: all 1s;
+    
+}
+#pic5:checked ~ .slide3{
+    margin-left: -400%;
+    transition: all 1s;
+}
+#pic5:checked ~ .discription3 {
+    margin-left: -400%;
+    transition: all 1s;
+}
+#pic5:checked ~ .slide2{
+    margin-left: -400%;
+    transition: all 1s;
+}
+#pic5:checked ~ .discription2 {
+    margin-left: -400%;
+    transition: all 1s;
+}
+#pic5:checked ~ .slide1{
+    margin-left: -400%;
+    transition: all 1s;
+}
+#pic5:checked ~ .discription1 {
+    margin-left: -400%;
+    transition: all 1s;
+}
+   
+
 
 @media screen and (max-width: 768px){
     .container{
         width: 70%;
     }
+    .discription {
+        font-size: 0.9em;
+        
+    }
+}
+@keyframes anime5 {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: -400%;
+
+    }
+    
+}
+@keyframes anime4 {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: -300%;
+
+    }
+    
+}
+@keyframes anime3 {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: -200%;
+
+    }
+    
+}
+@keyframes anime2 {
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: -100%;
+
+    }
+    
 }
