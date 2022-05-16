@@ -46,7 +46,8 @@ img{
 
 .discription {
     color:white;
-    min-width: 100%;
+    width: 70%;
+    /* min-width: 100%; */
     font-size: 1.2em;
     background-color: black;
     line-height: 1.6em;
@@ -76,26 +77,56 @@ img{
 .button5{
     margin-top: -5%;
     margin-left: 95%;
+    
 }
 .button {    
     display: inline-block;
     width: 2.6vw;
     height: 2.6vw;
-    background: radial-gradient(circle, #eee 30%, black 10%);
-    transition: background 5s ease-in-out;
+    background: radial-gradient(circle, #ececec 0%, #ececec 20%, #407088 21%, #407088 31%,  black 32%, black 100% );
+    transition: background 200ms ease-in-out;
     cursor: pointer;
     
 
 }
 .button:hover{
-    background: radial-gradient(circle, rgb(104, 217, 245) 10%,rgb(218, 70, 33) 30%, black 10%);
+    background: radial-gradient(circle, #ececec 0%, #ececec 31%,  black 32%, black 100% );
 
 }
-/* pic1 */
+
 
 #pic1:checked ~ .button1{
-    background: radial-gradient(circle, rgb(104, 217, 245) 10%,rgb(124, 238, 18) 30%, black 10%);
+    background: radial-gradient(circle, black  0%, black  20%, #407088 21%, #407088 31%,  black 32%, black 100% );
 }
+#pic1:checked:hover ~ .button1{
+    background: radial-gradient(circle, black  0%, black  20%, #ececec 21%, #ececec 31%,  black 32%, black 100% );
+}
+#pic2:checked ~ .button2{
+    background: radial-gradient(circle, black  0%, black  20%, #407088 21%, #407088 31%,  black 32%, black 100% );
+}
+#pic2:checked:hover ~ .button2{
+    background: radial-gradient(circle, black  0%, black  20%, #ececec 21%, #ececec 31%,  black 32%, black 100% );
+}
+#pic3:checked ~ .button3{
+    background: radial-gradient(circle, black  0%, black  20%, #407088 21%, #407088 31%,  black 32%, black 100% );
+}
+#pic3:checked:hover ~ .button3{
+    background: radial-gradient(circle, black  0%, black  20%, #ececec 21%, #ececec 31%,  black 32%, black 100% );
+}
+#pic4:checked ~ .button4{
+    background: radial-gradient(circle, black  0%, black  20%, #407088 21%, #407088 31%,  black 32%, black 100% );
+}
+#pic4:checked:hover ~ .button4{
+    background: radial-gradient(circle, black  0%, black  20%, #ececec 21%, #ececec 31%,  black 32%, black 100% );
+}
+#pic5:checked ~ .button5{
+    background: radial-gradient(circle, black  0%, black  20%, #407088 21%, #407088 31%,  black 32%, black 100% );
+}
+#pic5:checked:hover ~ .button5{
+    background: radial-gradient(circle, black  0%, black  20%, #ececec 21%, #ececec 31%,  black 32%, black 100% );
+}
+
+/* pic1  animation*/
 #pic1:checked ~ .slide5{
     margin-left: 0;
     transition: margin-left 1s;
@@ -319,7 +350,8 @@ img{
 @media screen and (max-width: 768px){
   
     .discription {
-        font-size: 0.8em;
+        font-size: 0.7em;
+        width: 100%;
         
     }
     .discription1{
@@ -370,10 +402,12 @@ img{
         margin-left: 60%;
     }
 }
-@media screen and (max-width: 1200px){
+
+@media screen and (max-width: 1920px){
   
     .discription {
-        font-size: 0.8em;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
         
     }
 
