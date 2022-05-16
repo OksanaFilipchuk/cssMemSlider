@@ -413,3 +413,14 @@ img{
 
     
 }
+
+@media screen and (max-width: 520px){
+  
+    .discription {
+        font-size: 0.8rem;
+        line-height: 0.8rem;
+        
+    }
+
+    
+}
