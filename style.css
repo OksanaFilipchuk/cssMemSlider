@@ -350,6 +350,25 @@ img{
         width: 60%;            
     
     }
+    .button1{
+        margin-left: 40%;
+    }
+    .button2{
+        
+        margin-left: 45%;
+    }
+    .button3{
+        
+        margin-left: 50%;
+    }
+    .button4{
+        
+        margin-left: 55%;
+    }
+    .button5{
+        
+        margin-left: 60%;
+    }
 }
 @media screen and (max-width: 1200px){
   
